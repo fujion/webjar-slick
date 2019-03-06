@@ -48,7 +48,7 @@
 						<configuration>
 							<target>
 								<copy todir="${webjar.target}">
-									<fileset dir="${src.rootdir}/node_modules/slick-carousel-latest" includes="LICENSE,readme.md,slick/*" />
+									<fileset dir="${src.rootdir}/node_modules/slick-carousel-latest" includes="LICENSE,readme.md,slick/**" />
 								</copy>
 							</target>
 						</configuration>
