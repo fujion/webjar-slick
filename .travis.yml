@@ -1,9 +1,11 @@
 language: java
+sudo: true
 jdk:
-- openjdk8
-after_success:
-- chmod +x ./travis/deploy.sh
-- "./travis/deploy.sh"
+  - openjdk8
+script:
+  - mvn test -B
+  - chmod +x ./travis/deploy.sh
+  - "./travis/deploy.sh"
 env:
   global:
   - secure: P3j0ubS5EokeoLLsnkOb+3ILAhJTPBfOPox3SJlE3S6B+8dMrwsu3eyydQfZHtFIKrWQ9X8MzpqquhPQhmBywuomuwOBdmS4KcHzsj54hXZ9Hp6/Vj74L7HNLhpS/MCM5X9zunLUozs4jIbSupXTGeQidJY9Lirjdeopq4FBkCYMYBk428DrcN837vXsTVYYEaKpDYvHqgmR9nDb09sHXsyzdeHmaBKGhUKFayYJnsNbaLiQPDfhMd5eaCNvtlHo7Mph2Mse8FgN9kWa4jorUTo+Fk97QRCunqFJTiLwVx7/Ia3CtBdiX/4xU/0IRxGzquI6h6cCuV4fx/ycZws8ACSAhDU7p7GPJJLB+AhNHE4iEAwLSRKlK5ZE8x3XB7YmgYnAZpqGQ/iw78imBz3Mlb8NtjasMYZXnJzK2VSF9ZFsPaycSUJXQpJhUKmq9+wffVdLkpHMT73nHb6ZR5eO1e+wx0ynt3OMVVAFUW2WydGhnWbtdjvhCJhxRc4Pk9hdY3tCoObjj09yzJCm2a5sMECQzuZ4Tl18+VvI5gVChs7TJc3ZodBmlJaLPtRNRVZAfuGXWwgdmTZSsDDZCZEPG4yb2BsgQVS4/n1mtQCUaBYyxBAXtyOjMAAHdP9th3JKCy0L/WsV15occ8TmIyj62qMXN+M3w/7XAyLRegbH+rE=
