@@ -12,18 +12,6 @@
 	<version>1.9.0-SNAPSHOT</version>
 	<description>Slick carousel library.</description>
 	
-	<properties>
-		<systemjs>
-			{
-				paths: {
-					"slick": "slick/slick.js",
-					"slick-css": "slick/slick.css",
-					"slick-theme-css": "slick/slick-theme.css"
-				}
-			}			
-		</systemjs>
-	</properties>
-	
 	<build>
 		<plugins>
 			<plugin>
@@ -32,9 +20,6 @@
 				<executions>
 					<execution>
 						<id>npm-install</id>
-						<configuration>
-							<skip>false</skip>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>
