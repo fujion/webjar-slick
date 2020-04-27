@@ -1,7 +1,7 @@
 {
-  "imports": {
-    "slick": "slick/slick.js",
-    "slick-css": "slick/slick.css",
-    "slick-theme-css": "slick/slick-theme.css"
+  "paths": {
+    "slick": "dist/slick.js",
+    "slick-css": "dist/slick.css",
+    "slick-theme-css": "dist/slick-theme.css"
   }
 }
