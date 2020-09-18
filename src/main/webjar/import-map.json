@@ -1,5 +1,5 @@
 {
-  "paths": {
+  "imports": {
     "slick": "dist/slick.js",
     "slick-css": "dist/slick.css",
     "slick-theme-css": "dist/slick-theme.css"

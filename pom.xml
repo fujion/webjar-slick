@@ -9,7 +9,7 @@
 
 	<name>Slick library</name>
 	<artifactId>webjar-slick</artifactId>
-	<version>1.9.0</version>
+	<version>1.9.0-1</version>
 	<description>Slick carousel library.</description>
 	
 	<build>
