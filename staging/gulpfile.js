@@ -1,6 +1,6 @@
 const {src, dest, series} = require('gulp');
 
-const srcDir = '${src.rootdir}/node_modules/slick-carousel-latest/';
+const srcDir = '${webjar.staging}/node_modules/slick-carousel-latest/';
 const destDir = '${webjar.target}/';
 
 function task1() {
